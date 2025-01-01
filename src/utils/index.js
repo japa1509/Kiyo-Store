@@ -1,6 +1,18 @@
-//El parametro es un array y la funcion retorna el total price
+// Calcula el precio total
 export const totalPrice = (products) => {
-    let sum = 0
-    products.forEach(product => sum += product.price)
-    return sum
-}
+  return products.reduce((sum, product) => sum + product.price * product.quantity, 0);
+};
+
+// Calcula el total de productos
+export const totalProducts = (products) => {
+  return products.reduce((sum, product) => sum + product.quantity, 0);
+};
+
+// Formatea un precio total
+export const formatTotalPrice = (products, currency = "USD", locale = "en-US") => {
+  const total = totalPrice(products);
+  return new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency,
+  }).format(total);
+};
