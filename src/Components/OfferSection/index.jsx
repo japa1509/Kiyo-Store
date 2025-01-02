@@ -45,14 +45,14 @@ export const OfferSection = () => {
     <section className="w-full py-10 px-5 mb-10 bg-gradient-to-r from-[#ffba00] to-[#ff6c00]">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <img src="/phone.webp" alt="Left Image" className="w-24 md:w-36 h-auto mx-auto rounded-2xl shadow-lg" />
+          <img src="/phone.webp" width={200} height={200} alt="Left Image" loading="lazy" className="w-24 md:w-36 h-auto mx-auto rounded-2xl shadow-lg" />
           <div className="text-center">
-            <p className="text-white text-2xl font-extrabold mb-2 drop-shadow-md">Hot Deal This Week</p>
-            <p className="text-4xl font-black text-white mb-6 drop-shadow-md">New Collection Up to 50% OFF</p>
+            <p className="text-white text-2xl font-extrabold mb-2">Hot Deal This Week</p>
+            <p className="text-4xl font-black text-white mb-6">New Collection Up to 50% OFF</p>
             <Countdown date={endDate} renderer={renderer} />
             <button className="mt-6 px-6 py-3 bg-gradient-to-r from-[#222222] to-[#555555] text-white text-xl font-bold rounded-full hover:scale-102 transition-transform duration-200 shadow-lg">Shop Now</button>
           </div>
-          <img src="/phone.webp" alt="Right Image" className="w-24 md:w-36 h-auto mx-auto rounded-2xl shadow-lg md:block hidden" />
+          <img src="/phone.webp" width={200} height={200} alt="Right Image" loading="lazy" className="w-24 md:w-36 h-auto mx-auto rounded-2xl shadow-lg md:block hidden" />
         </div>
       </div>
     </section>

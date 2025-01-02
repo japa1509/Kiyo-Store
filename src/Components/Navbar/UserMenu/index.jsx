@@ -56,7 +56,7 @@ export const UserMenu = () => {
           <FaChevronDown />
         </button>
       ) : (
-        <NavLink to="/sign-in" className="text-[#222222] font-medium">
+        <NavLink to="/sign-in" className="text-[#222222] font-medium" aria-label="User">
           <FaUser className="h-5 w-5" />
         </NavLink>
       )}

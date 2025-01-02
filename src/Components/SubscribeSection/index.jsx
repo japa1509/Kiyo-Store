@@ -19,16 +19,16 @@ export const SubscribeSection = () => {
           </button>
         </div>
         <div className="flex justify-center items-center mt-6 space-x-4">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition duration-300">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600 transition duration-300">
             <FaFacebook className="w-6 h-6"/>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition duration-300">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-400 transition duration-300">
             <FaTwitter className="w-6 h-6"/>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-600 transition duration-300">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-pink-600 transition duration-300">
             <FaInstagram className="w-6 h-6"/>
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-red-600 transition duration-300">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube" className="text-gray-400 hover:text-red-600 transition duration-300">
             <FaYoutube className="w-6 h-6"/>
           </a>
         </div>

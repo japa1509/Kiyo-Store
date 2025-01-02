@@ -75,6 +75,8 @@ export const Card = ({ data }) => {
     </span>
     <img
       ref={imgRef} 
+      width={200}
+      height={240}
       className="h-full w-full object-cover" 
       src={isIntersecting ? data.image : ''} 
       alt={data.title}
@@ -90,7 +92,7 @@ export const Card = ({ data }) => {
     <div className="flex flex-col justify-between h-full">
       <div className="flex items-center gap-3 mt-2">
         <span className="text-xl font-bold text-gray-900">${data.price}</span>
-        <span className="text-[#cccccc] text-xl line-through"> $999</span>
+        <span className="text-[#808080] font-medium text-sm line-through"> $999</span>
       </div>
       <div className="flex items-center justify-between">
         <span className="flex"> {renderStars()} </span>
