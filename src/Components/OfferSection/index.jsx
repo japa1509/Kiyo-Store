@@ -18,28 +18,16 @@ export const OfferSection = () => {
     localStorage.setItem('endDate', endDate);
   }, [endDate]);
 
-  const renderer = ({ days, hours, minutes, seconds }) => {
-    return (
-      <div className="flex justify-center text-center space-x-4">
-        <div className="p-3 w-20 h-auto rounded-full bg-[#222222] text-white">
-          <span className="block text-2xl font-bold">{days}</span>
-          <span className="text-xs font-medium">Días</span>
+  const renderer = ({ days, hours, minutes, seconds }) => (
+    <div className="flex justify-center text-center space-x-4">
+      {[{ label: "Días", value: days }, { label: "Horas", value: hours }, { label: "Minutos", value: minutes }, { label: "Segundos", value: seconds }].map((item, index) => (
+        <div key={index} className="p-3 w-20 h-auto rounded-full bg-[#222222] text-white">
+          <span className="block text-2xl font-bold">{item.value}</span>
+          <span className="text-xs font-medium">{item.label}</span>
         </div>
-        <div className="p-3 w-20 h-auto rounded-full bg-[#222222] text-white">
-          <span className="block text-2xl font-bold">{hours}</span>
-          <span className="text-xs font-medium">Horas</span>
-        </div>
-        <div className="p-3 w-20 h-auto rounded-full bg-[#222222] text-white">
-          <span className="block text-2xl font-bold">{minutes}</span>
-          <span className="text-xs font-medium">Minutos</span>
-        </div>
-        <div className="p-3 w-20 h-auto rounded-full bg-[#222222] text-white">
-          <span className="block text-2xl font-bold">{seconds}</span>
-          <span className="text-xs font-medium">Segundos</span>
-        </div>
-      </div>
-    );
-  };
+      ))}
+    </div>
+  );
 
   return (
     <section className="w-full py-10 px-5 mb-10 bg-gradient-to-r from-[#ffba00] to-[#ff6c00]">
@@ -58,12 +46,6 @@ export const OfferSection = () => {
     </section>
   );
 };
-
-
-
-
-
-
 
 
 
