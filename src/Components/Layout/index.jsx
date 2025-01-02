@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-export function Layout({ children }) {
+export const Layout = ({ children })=> {
     return (
         <div className="relative flex flex-col items-center sm:pt-[81px] pt-28 bg-[#FEFEFE]">
             {children}

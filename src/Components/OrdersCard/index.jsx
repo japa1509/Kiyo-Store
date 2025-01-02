@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export function OrdersCard({ totalPrice, totalProducts, date }) {
+export const OrdersCard = ({ totalPrice, totalProducts, date }) => {
     return (
         <div className="flex justify-between items-center mb-3 border border-gray-300 hover:border-[#ff6c00] shadow-md w-80 p-4 rounded-lg hover:shadow-lg transition-shadow duration-300 cursor-pointer">
             <div className="flex flex-col">

@@ -1,6 +1,6 @@
 import { FaTimes, FaPlus, FaMinus } from "react-icons/fa";
 import PropTypes from "prop-types";
-export function OrderCard(props) {
+export const OrderCard = (props) => {
   const { title, image, price, id, quantity, handleDelete, handleQuantityChange, showQuantityButtons = true } = props;
 
   const handleIncrement = () => handleQuantityChange(id, quantity + 1);

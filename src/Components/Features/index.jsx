@@ -1,5 +1,5 @@
 import {features} from "../../data/features";
-export function Features() {
+export const Features = ()=> {
     return (
         <div className="bg-white py-12 ">
             <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 sm:gap-x-10 md:gap-0 md:grid-cols-4 gap-6 text-center  rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.2)]">

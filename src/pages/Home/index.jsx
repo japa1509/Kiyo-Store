@@ -6,7 +6,7 @@ import { ProductDetail } from "../../Components/ProductDetail";
 import { OfferSection } from "../../Components/OfferSection";
 import { Features } from "../../Components/Features";
 
-export function Home() {
+export const Home =()=> {
   const { filteredProducts } = useContext(ShoppingContext);
 
   return (

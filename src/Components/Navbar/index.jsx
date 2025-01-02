@@ -4,7 +4,7 @@ import { UserMenu } from "./UserMenu";
 import { CartIcon } from "./CartIcon";
 import { ShoppingContext } from "../../context";
 import { useContext } from "react";
-export function Navbar() {
+export const Navbar = () => {
   const{setSearchByCategory}=useContext(ShoppingContext)
   return (
     <header className="fixed z-10 top-0 w-full bg-[#fff] shadow-lg text-[#1f1f1f]">

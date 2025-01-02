@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-export function PhoneModal({ closeModal, phoneNumber, setPhoneNumber }) {
+export const PhoneModal =({ closeModal, phoneNumber, setPhoneNumber }) => {
     const [inputValue, setInputValue] = useState(phoneNumber || "");
 
     const savePhoneNumber = () => {

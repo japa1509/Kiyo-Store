@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-export function PasswordModal({ closeModal, savePassword }) {
+export const PasswordModal = ({ closeModal, savePassword }) => {
     const [currentPassword, setCurrentPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");

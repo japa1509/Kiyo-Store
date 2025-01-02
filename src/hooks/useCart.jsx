@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { ShoppingContext } from "../context";
 import { formatTotalPrice, totalProducts } from "../utils";
 
-export function useCart() {
+export const useCart = () => {
   const {
     cartProducts,
     setCartProducts,

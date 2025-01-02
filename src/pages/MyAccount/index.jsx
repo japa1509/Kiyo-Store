@@ -6,7 +6,7 @@ import { PasswordModal } from "../../Components/PasswordModal.jsx";
 import { FacebookIcon, GoogleIcon, AppleIcon } from "../../Components/Icons";
 import { getAuth, updatePassword, reauthenticateWithCredential, EmailAuthProvider } from "firebase/auth";
 
-export function MyAccount() {
+export const MyAccount = ()=> {
     const { user } = useAuth();
     const [phoneNumber, setPhoneNumber] = useState("+57 00000000"); // Estado del número de teléfono
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado del modal

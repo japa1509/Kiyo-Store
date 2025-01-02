@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ShoppingContext } from "../../context";
 import { FaTimes } from "react-icons/fa";
 
-export function ProductDetail() {
+export const ProductDetail = () => {
   const { closeProductDetail, isDetailOpen, productToShow, addProductsToCart,openCheckoutSideMenu } = useContext(ShoppingContext);
 
   const handleAddToCart = (product) => { addProductsToCart(product); 

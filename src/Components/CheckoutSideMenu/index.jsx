@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/useAuth";
 import { useCart } from "../../hooks/useCart";
 
-export function CheckoutSideMenu() {
+export const CheckoutSideMenu = () => {
   const {
     cartProducts,
     isCheckoutSideMenu,

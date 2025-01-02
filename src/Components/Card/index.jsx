@@ -3,8 +3,9 @@ import { ShoppingContext } from "../../context";
 import { PropTypes } from "prop-types";
 import { FaCartPlus, FaCheck } from "react-icons/fa";
 import { useRating } from "../../hooks/useRating";
+import useLazyLoad from "../../hooks/useLazyLoad";
 
-export function Card({ data }) {
+export const Card = ({ data }) => {
   const {
     openProductDetail,
     setProductToShow,
@@ -15,6 +16,10 @@ export function Card({ data }) {
   } = useContext(ShoppingContext);
 
   const { rating, renderStars } = useRating(data.rating || 0);
+  const [imgRef, isIntersecting] = useLazyLoad({ 
+    root: null, 
+    rootMargin: '0px', 
+    threshold: 0.1, });
 
   const showProduct = (productDetail) => {
     openProductDetail();
@@ -69,8 +74,9 @@ export function Card({ data }) {
       {data.category}
     </span>
     <img
-      className="h-full w-full object-cover"
-      src={data.image}
+      ref={imgRef} 
+      className="h-full w-full object-cover" 
+      src={isIntersecting ? data.image : ''} 
       alt={data.title}
     />
   </figure>
