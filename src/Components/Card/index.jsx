@@ -75,8 +75,8 @@ export const Card = ({ data }) => {
     </span>
     <img
       ref={imgRef} 
-      width={200}
-      height={240}
+      width={160}
+      height={144}
       className="h-full w-full object-cover" 
       src={isIntersecting ? data.image : ''} 
       alt={data.title}
