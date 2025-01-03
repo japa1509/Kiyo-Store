@@ -10,7 +10,7 @@
 
 ## Descripción
 
-KiyoStore es una moderna y completa aplicación de comercio electrónico (“e-commerce”) desarrollada con React.js, Tailwind CSS, y Firebase. Diseñada para proporcionar una experiencia de usuario ágil, atractiva y funcional, KiyoStore incluye una variedad de características avanzadas como autenticación, gestión de carrito, filtros, y más.
+KiyoStore es una moderna y completa aplicación de e-commerce desarrollada con React.js, Tailwind CSS, y Firebase. Diseñada para proporcionar una experiencia de usuario ágil, atractiva y funcional, cuenta con características como autenticación, gestión de carrito, filtros, y más.
 
 ## Características principales
 
