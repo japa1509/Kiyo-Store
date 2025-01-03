@@ -1,6 +1,5 @@
 # KiyoStore
-
-
+![KiyoStore](public/KiyoStore.webp)
 
 ## Índice
 
